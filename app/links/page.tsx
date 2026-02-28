@@ -137,7 +137,7 @@ export default function LinksPage() {
 
         <div className={styles.secondaryRow}>
           <a className={styles.secondaryCta} href={URLS.web} target="_blank" rel="noreferrer">
-            כניסה לאתר
+            רוצה לראות עוד? כנס לאתר שלי
           </a>
         </div>
 
@@ -145,7 +145,7 @@ export default function LinksPage() {
           {social.map(s => (
             <a
               key={s.label}
-              className={`${styles.socialBtnSmall} ${s.variant !== 'wa' ? styles.socialBtnLarge : ''} ${
+              className={`${styles.socialBtnSmall} ${styles.socialBtnLarge} ${
                 s.variant === 'wa' ? styles.socialWa : s.variant === 'ig' ? styles.socialIg : styles.socialFb
               }`}
               href={s.href}
