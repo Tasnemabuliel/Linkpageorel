@@ -1,0 +1,300 @@
+.page {
+  position: relative;
+  min-height: 100svh;
+  color: #fff;
+  overflow: hidden;
+  background: #0b1220;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: grid;
+  align-items: center;
+  padding: 44px 16px;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background:
+    radial-gradient(1100px 640px at 20% 10%, rgba(0, 194, 255, 0.16), transparent 60%),
+    radial-gradient(980px 560px at 85% 0%, rgba(39, 45, 152, 0.22), transparent 60%),
+    linear-gradient(180deg, rgba(7, 10, 20, 0.95), rgba(7, 10, 20, 0.78));
+}
+
+.heroImg {
+  object-fit: cover;
+  filter: blur(10px) saturate(1.05) contrast(1.05);
+  transform: scale(1.06);
+  opacity: 0.92;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.52);
+}
+
+.heroInner {
+  position: relative;
+  z-index: 2;
+  width: min(560px, calc(100vw - 32px));
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.wordmark {
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  font-size: 22px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.25);
+}
+
+.h1 {
+  margin: 6px 0 0;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: 1.08;
+  font-size: clamp(34px, 5.2vw, 52px);
+  text-shadow: 0 18px 70px rgba(0, 0, 0, 0.6);
+}
+
+.h1Accent {
+  color: var(--accent);
+  text-shadow: 0 0 28px rgba(0, 194, 255, 0.35);
+}
+
+.primaryCta {
+  margin-top: 6px;
+  width: 100%;
+  max-width: 520px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(37, 211, 102, 0.95), rgba(0, 194, 255, 0.95));
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 1.1;
+  letter-spacing: -0.2px;
+  box-shadow:
+    0 18px 46px rgba(0, 0, 0, 0.32),
+    0 0 40px rgba(0, 194, 255, 0.22);
+  transition: transform 180ms ease, filter 180ms ease, box-shadow 180ms ease;
+}
+.primaryCta:hover {
+  transform: translateY(-3px);
+  filter: saturate(1.08);
+  box-shadow:
+    0 26px 70px rgba(0, 0, 0, 0.36),
+    0 0 56px rgba(0, 194, 255, 0.28);
+}
+.primaryCta:focus-visible {
+  outline: 3px solid rgba(0, 194, 255, 0.55);
+  outline-offset: 3px;
+}
+
+/* (הוסר) וידאו היכרות — לפי בקשה נשאר עמוד ממוקד CTA בלבד */
+
+/* MAIN content */
+.main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 28px 16px 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.section {
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.22);
+  padding: 16px;
+}
+
+.h2 {
+  margin: 0 0 10px;
+  font-weight: 900;
+  letter-spacing: -0.3px;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.sectionText {
+  margin: 0 0 12px;
+  color: rgba(255, 255, 255, 0.84);
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.list {
+  margin: 0;
+  padding: 0 18px 0 0;
+  display: grid;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.84);
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.secondaryRow {
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+.secondaryCta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 18px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(12px);
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.1;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.22);
+  transition: transform 170ms ease, box-shadow 170ms ease, border-color 170ms ease, background 170ms ease;
+}
+
+.secondaryCta:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(0, 194, 255, 0.3);
+  box-shadow:
+    0 18px 46px rgba(0, 0, 0, 0.26),
+    0 0 26px rgba(0, 194, 255, 0.12);
+}
+
+.bottomSocial {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* enlarged a bit */
+.socialBtnSmall {
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+  color: rgba(255, 255, 255, 0.9);
+  transition: transform 170ms ease, box-shadow 170ms ease, border-color 170ms ease;
+}
+
+/* bigger boxes for Instagram + Facebook (keeps WhatsApp as-is) */
+.socialBtnLarge {
+  width: 54px;
+  height: 54px;
+}
+.socialBtnLarge .socialIcon {
+  width: 28px;
+  height: 28px;
+}
+
+.socialBtnSmall:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0, 194, 255, 0.32);
+  box-shadow:
+    0 16px 40px rgba(0, 0, 0, 0.25),
+    0 0 26px rgba(0, 194, 255, 0.12);
+}
+
+.socialBtnSmall:focus-visible {
+  outline: 3px solid rgba(0, 194, 255, 0.5);
+  outline-offset: 3px;
+}
+
+.socialWa {
+  border-color: rgba(37, 211, 102, 0.5);
+}
+.socialWa:hover {
+  border-color: rgba(37, 211, 102, 0.7);
+  box-shadow:
+    0 16px 40px rgba(0, 0, 0, 0.25),
+    0 0 26px rgba(37, 211, 102, 0.14);
+}
+
+.socialIg {
+  color: #e1306c;
+  border-color: rgba(225, 48, 108, 0.45);
+}
+.socialIg:hover {
+  border-color: rgba(225, 48, 108, 0.7);
+  box-shadow:
+    0 16px 40px rgba(0, 0, 0, 0.25),
+    0 0 26px rgba(225, 48, 108, 0.16);
+}
+
+.socialFb {
+  color: #1877f2;
+  border-color: rgba(24, 119, 242, 0.45);
+}
+.socialFb:hover {
+  border-color: rgba(24, 119, 242, 0.7);
+  box-shadow:
+    0 16px 40px rgba(0, 0, 0, 0.25),
+    0 0 26px rgba(24, 119, 242, 0.16);
+}
+
+.socialIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.footer {
+  margin-top: 18px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 700;
+}
+
+.footerName {
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 950;
+  letter-spacing: -0.3px;
+}
+
+.footerRole {
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.footerLink {
+  color: rgba(0, 194, 255, 0.92);
+  font-weight: 900;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .primaryCta,
+  .secondaryCta,
+  .socialBtnSmall {
+    transition: none !important;
+    transform: none !important;
+  }
+}

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+:root {
+  --primary: #272d98;
+  --accent: #00c2ff;
+  --brand-gradient: linear-gradient(135deg, #00c2ff 0%, #272d98 100%);
+  --bg-top: #ffffff;
+  --bg-mid: #f8fafc;
+  --bg-bottom: #e2e8f0;
+  --text: #374151;
+  --secondary: #6b7280;
+  --secondary-action: #2eafad;
+  --whatsapp: #25d366;
+
+  --glass-bg: rgba(255, 255, 255, 0.72);
+  --glass-border: rgba(0, 194, 255, 0.28);
+  --glass-blur: 16px;
+  --shadow-soft: 0 22px 60px rgba(15, 23, 42, 0.12);
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  font-family: 'Varela Round', 'Segoe UI', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background:
+    linear-gradient(180deg, var(--bg-top) 0%, var(--bg-mid) 45%, var(--bg-bottom) 100%),
+    radial-gradient(900px 480px at 15% 10%, rgba(0, 194, 255, 0.08), transparent 60%),
+    radial-gradient(900px 480px at 85% 0%, rgba(39, 45, 152, 0.06), transparent 60%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
