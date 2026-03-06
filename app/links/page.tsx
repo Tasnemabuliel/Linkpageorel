@@ -123,7 +123,7 @@ export default function LinksPage() {
       </header>
 
       <main className={styles.main} aria-label="תוכן">
-        <section className={styles.section} aria-label="מה קורה בשיעור ניסיון?">
+        <section className={styles.section} aria-label="מה קורה באימון ניסיון?">
           <h2 className={styles.h2}>מה קורה בשיעור ניסיון?</h2>
           <p className={styles.sectionText}></p>
           <ul className={styles.list}>
