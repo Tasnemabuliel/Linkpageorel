@@ -113,7 +113,7 @@ export default function LinksPage() {
 
           <a
             className={styles.primaryCta}
-            href={`${URLS.whatsapp}?text=${encodeURIComponent('היי אוראל! אשמח לקבוע שיעור ניסיון 💪')}`}
+            href={`${URLS.whatsapp}?text=${encodeURIComponent('היי אוראל! אשמח לקבוע אימון ניסיון 💪')}`}
             target="_blank"
             rel="noreferrer"
           >
