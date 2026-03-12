@@ -14,7 +14,7 @@ const WA_E164_NO_PLUS = '972522345850';
 const URLS = {
   facebook: 'https://www.facebook.com/share/1KMoAUAXac/?mibextid=wwXIfr',
   instagram: 'https://www.instagram.com/orel.koriat?igsh=MWhvbjE5a2ZsamRlcg%3D%3D&utm_source=qr',
-  web: 'https://orel-kuriat.vercel.app/',
+  web: 'https://orelkorait.com/',
   whatsapp: `https://wa.me/${WA_E164_NO_PLUS}`,
   phone: `tel:${PHONE_E164}`,
 };
@@ -117,7 +117,7 @@ export default function LinksPage() {
             target="_blank"
             rel="noreferrer"
           >
-            קבע שיעור ניסיון
+            קבע אימון ניסיון
           </a>
         </div>
       </header>
