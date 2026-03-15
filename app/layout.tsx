@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'OREL KORIAT — דף קישורים',
+  title: 'OREL KORIAT',
   description: 'Link-in-bio פרימיום למאמן כושר',
 };
 
